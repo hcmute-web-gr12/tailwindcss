@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["../webapp/**/*.{html,jsp}"],
+	content: ["../webapp/**/*.jsp"],
+	safelist: [
+		{
+			pattern: /ring-(brand|alternate).*/,
+			variants: ['focus']
+		},
+	],
 	theme: {
 		extend: {
 			ringColor: (theme) => ({
