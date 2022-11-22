@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["../main/webapp/**/*.jsp"],
+	content: ['../main/webapp/**/*.jsp'],
 	safelist: [
 		{
-			pattern: /ring-(brand|alternate).*/,
+			pattern: /ring-(brand|alternate|primary)\/60/,
 			variants: ['focus']
 		},
 	],
@@ -40,6 +40,19 @@ module.exports = {
 					900: '#0026b0',
 					DEFAULT: '#1d4ed8'
 				},
+				primary: {
+					50: '#E0FAE0',
+					100: '#C6F6C6',
+					200: '#8DEC8D',
+					300: '#55E355',
+					400: '#22CD22',
+					500: '#199619',
+					600: '#147614',
+					700: '#0F5C0F',
+					800: '#0A3D0A',
+					900: '#051F05',
+					DEFAULT: '#199619'
+				}
 			},
 		}
 	},
