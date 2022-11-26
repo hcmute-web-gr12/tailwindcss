@@ -13,6 +13,10 @@ module.exports = {
 				...theme('colors'),
 				DEFAULT: theme('colors.brand.DEFAULT'),
 			}),
+			borderColor: (theme) => ({
+				...theme('colors'),
+				DEFAULT: theme('colors.stone.200'),
+			}),
 			colors: {
 				brand: {
 					50: '#ff4a4f',
