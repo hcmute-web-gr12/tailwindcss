@@ -3,7 +3,7 @@ module.exports = {
 	content: ['../main/webapp/WEB-INF/**/*.jsp', '../main/webapp/scripts/*.js'],
 	safelist: [
 		{
-			pattern: /ring-(brand|alternate|primary)\/60/,
+			pattern: /ring-(brand|alternate|primary|stone-500|red-500|yellow-500)\/60/,
 			variants: ['focus']
 		},
 	],
