@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['../main/webapp/WEB-INF/**/*.jsp', '../main/webapp/scripts/*.js'],
+	content: ['../main/webapp/WEB-INF/**/*.jsp', '../main/webapp/scripts/**/*.js'],
 	safelist: [
 		{
 			pattern: /ring-(brand|alternate|primary|stone-500|red-500|yellow-500)\/60/,
@@ -57,6 +57,15 @@ module.exports = {
 					900: '#051F05',
 					DEFAULT: '#199619'
 				}
+			},
+			keyframes: {
+				shimmer: {
+					from: { backgroundPosition: '200% 0' },
+					to: { backgroundPosition: '-200% 0' },
+				},
+			},
+			animation: {
+				shimmer: 'shimmer 8s ease-in-out infinite',
 			},
 		}
 	},
